@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import Switch from "react-switch";
+import { ThemeContext } from "../../../contexts/ThemeProvider/ThemeProvider";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   const menuItems = (
     <>
       <li>
@@ -11,16 +15,19 @@ const Navbar = () => {
         <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/parking">Parking Slots</Link>
+        <Link to="/parking">Parking</Link>
       </li>
       <li>
         <Link to="/dashboard">Dashboard</Link>
       </li>
+      <button>
+        <Switch onChange={() => toggleTheme()} checked={theme} />
+      </button>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
