@@ -1,5 +1,6 @@
 import { addDays } from "date-fns";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import BookingModal from "../BookingModal/BookingModal";
 import ParkingPlaces from "../ParkingPlaces/ParkingPlaces";
 import ParkingBanner from "./ParkingBanner/ParkingBanner";
 
@@ -10,39 +11,40 @@ const Parking = () => {
       to: addDays(new Date(), 7),
     } || undefined
   );
-  // console.log(format(range?.from, "PP"), format(range?.to, "PP"));
 
-  // if (range?.from !== undefined && range?.to !== undefined) {
-  //   console.log(format(range?.from, "PP"), format(range?.to, "PP"));
-  // }
+  const [places, setPlaces] = useState([]);
 
-  // <h1>
-  // {range && (
-  //   <p>
-  //     From {format(range.from, "PP")}
-  //     to {format(range.to, "PP")}
-  //     Selected
-  //   </p>
-  // )}
-  // </h1>
+  const [place, setPlace] = useState(null);
 
-  // let footer = <p>Please pick the first day.</p>;
-  // if (range?.from) {
-  //   if (!range.to) {
-  //     footer = <p>{format(range.from, "PPP")}</p>;
-  //   } else if (range.to) {
-  //     footer = (
-  //       <p>
-  //         {format(range.from, "PPP")}–{format(range.to, "PPP")}
-  //       </p>
-  //     );
-  //   }
-  // }
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetch(`ParkingOptions.json`);
+        const data = await response.json();
+        setPlaces(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    loadData();
+  }, []);
+
+  const handleBooking = (place) => {
+    setPlace(place);
+  };
 
   return (
     <div>
       <ParkingBanner range={range} setRange={setRange} />
-      <ParkingPlaces range={range} />
+      <ParkingPlaces
+        handleBooking={handleBooking}
+        places={places}
+        setPlaces={setPlaces}
+        range={range}
+      />
+      {place && (
+        <BookingModal setPlace={setPlace} range={range} place={place} />
+      )}
     </div>
   );
 };

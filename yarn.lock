@@ -1574,7 +1574,7 @@
 
 "@remix-run/router@1.0.3":
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.3.tgz#953b88c20ea00d0eddaffdc1b115c08474aa295d"
+  resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.0.3.tgz"
   integrity sha512-ceuyTSs7PZ/tQqi19YZNBc5X7kj1f8p+4DIyrcIYFY9h+hd1OKm4RqtiWldR9eGEvIiJfsqwM4BsuCtRIuEw6Q==
 
 "@rollup/plugin-babel@^5.2.0":
@@ -3513,7 +3513,7 @@ data-urls@^2.0.0:
 
 date-fns@^2.29.3:
   version "2.29.3"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
+  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.29.3.tgz"
   integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
 
 debug@2.6.9, debug@^2.6.0, debug@^2.6.9:
@@ -6112,14 +6112,14 @@ loose-envify@^1.1.0, loose-envify@^1.4.0:
 
 lottie-react@^2.3.1:
   version "2.3.1"
-  resolved "https://registry.yarnpkg.com/lottie-react/-/lottie-react-2.3.1.tgz#697060417bab027edb57ed45bda9d62e920d4040"
+  resolved "https://registry.npmjs.org/lottie-react/-/lottie-react-2.3.1.tgz"
   integrity sha512-8cxd6XZZtECT6LoAhCftRdYrEpHxiouvB5EPiYA+TtCG5LHNYAdMS9IVIHcxKtWnpo7x16QfCLj1XLXZpaN81A==
   dependencies:
     lottie-web "^5.9.4"
 
 lottie-web@^5.9.4:
   version "5.9.6"
-  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.6.tgz#62ae68563355d3e04aa75d53dec3dd4bea0e57c9"
+  resolved "https://registry.npmjs.org/lottie-web/-/lottie-web-5.9.6.tgz"
   integrity sha512-JFs7KsHwflugH5qIXBpB4905yC1Sub2MZWtl/elvO/QC6qj1ApqbUZJyjzJseJUtVpgiDaXQLjBlIJGS7UUUXA==
 
 lower-case@^2.0.2:
@@ -7426,7 +7426,7 @@ react-app-polyfill@^3.0.0:
 
 react-day-picker@^8.3.6:
   version "8.3.6"
-  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-8.3.6.tgz#21c0d625ff18d807d7b9f428c70b980c4869936d"
+  resolved "https://registry.npmjs.org/react-day-picker/-/react-day-picker-8.3.6.tgz"
   integrity sha512-yCfiDZqyxgRBeRlkhflBJXtgBlDx/+OE69/qVFZJkTrLUazdVysWiVGT9fnseoqRw1loMkk0gOZVc5FHqb8Tug==
 
 react-dev-utils@^12.0.1:
@@ -7472,6 +7472,11 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-hook-form@^7.39.4:
+  version "7.39.4"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.39.4.tgz#7d9edf4e778a0cec4383f0119cd0699e3826a14a"
+  integrity sha512-B0e78r9kR9L2M4A4AXGbHoA/vyv34sB/n8QWJAw33TFz8f5t9helBbYAeqnbvcQf1EYzJxKX/bGQQh9K+evCyQ==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -7494,7 +7499,7 @@ react-refresh@^0.11.0:
 
 react-router-dom@^6.4.3:
   version "6.4.3"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.4.3.tgz#70093b5f65f85f1df9e5d4182eb7ff3a08299275"
+  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.4.3.tgz"
   integrity sha512-MiaYQU8CwVCaOfJdYvt84KQNjT78VF0TJrA17SIQgNHRvLnXDJO6qsFqq8F/zzB1BWZjCFIrQpu4QxcshitziQ==
   dependencies:
     "@remix-run/router" "1.0.3"
@@ -7502,7 +7507,7 @@ react-router-dom@^6.4.3:
 
 react-router@6.4.3:
   version "6.4.3"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.4.3.tgz#9ed3ee4d6e95889e9b075a5d63e29acc7def0d49"
+  resolved "https://registry.npmjs.org/react-router/-/react-router-6.4.3.tgz"
   integrity sha512-BT6DoGn6aV1FVP5yfODMOiieakp3z46P1Fk0RNzJMACzE7C339sFuHebfvWtnB4pzBvXXkHP2vscJzWRuUjTtA==
   dependencies:
     "@remix-run/router" "1.0.3"
@@ -7564,7 +7569,7 @@ react-scripts@5.0.1:
 
 react-switch@^7.0.0:
   version "7.0.0"
-  resolved "https://registry.yarnpkg.com/react-switch/-/react-switch-7.0.0.tgz#400990bb9822864938e343ed24f13276a617bdc0"
+  resolved "https://registry.npmjs.org/react-switch/-/react-switch-7.0.0.tgz"
   integrity sha512-KkDeW+cozZXI6knDPyUt3KBN1rmhoVYgAdCJqAh7st7tk8YE6N0iR89zjCWO8T8dUTeJGTR0KU+5CHCRMRffiA==
   dependencies:
     prop-types "^15.7.2"
